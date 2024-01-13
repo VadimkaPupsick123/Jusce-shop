@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Сок Сады Придонья</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<h4 class="logo">Сады Придонья</h4>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">Главная</a> </li>
+					<li class="nav__item"><a href="#" class="nav__link">Сок</a> </li>
+					<li class="nav__item"><a href="#" class="nav__link">Пюре</a> </li>
+					<li class="nav __item"><a href="#" class="nav__link">Гранатовый сок</a> </li>
+				</ul>
+				<div class="burger"onclick="burgerClick()">
+					<div class="burger_line burger_line_1"></div>
+					<div class="burger_line burger_line_2"></div>
+					<div class="burger_line burger_line_3"></div>
+				</div>
+				
+			</nav>
+
+			<button class="btn_menu" id="btn-menu">Меню</button>
+			<div class="header__menu" id="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="">Вход</a></li>
+					<li class="menu__item"><a href="">Корзина</a></li>
+					<li class="menu__item"><a href="">Акции</a></li>
+					<li class="menu__item"><a href="">Реклама</a></li>
+						<div class="theme">
+							<h4 class="theme__title">Темы</h4>
+							<ul class="theme__list">
+								<li class="theme__item">
+									<div class="theme__white" onclick="choiceWhite()"></div>
+								</li>
+									<div class="theme__dark" onclick="choiceDark()"></div>
+								<li class="theme__item">
+									
+								
+								</li>
+							</ul>
+						</div>
+					<li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+<section class="shop">
+	<div class="container">
+		<h1 class="shop_title">Сок Сады Придонья Черешня</h1>
+
+		<div class="itc-slider" data-slider="itc-slider">
+			<div class="itc-slider__wrapper">
+				<div class="itc-slider__items">
+					<div class="itc-slider__item">
+						<img src="img/81258_2.JPG" class="shop_img">
+					</div>
+					<div class="itc-slider__item">
+						<img src="img/1234.PNG" class="shop_img">
+					</div>
+					<div class="itc-slider__item">
+						<img src="img/2223.JPG" class="shop_img">
+					</div>
+				</div>
+			</div>
+			<button class="itc-slider__btn itc-slider__btn_prev"></button>
+  			<button class="itc-slider__btn itc-slider__btn_next"></button>
+		</div>
+
+		<div class="accordion" id="accordion-1">
+			<div class="accordion__item">
+				<h2 class="accordion__header">О товаре</h2>
+				<div class="accordion__body">
+					<p class="shop_text">Сок Яблоко-вишня осветлённый Изготовлен из концентрированных соков. О продукте. Сок приготовлен из яблок и вишни, выращенных в компании «Сады Придонья». Он имеет характерный вишнёвый вкус и аромат, насыщенный цвет. Вишня - источник калия и железа. Яблочно-вишневый сок хорошо помогает при железодефицитной анемии у ребенка. Применение. Рекомендовано детям старше 5-и месяце</p>
+				</div>
+			</div>
+			<div class="accordion__item">
+			<h2 class="accordion__header">цена</h2>
+				<div class="accordion__body">
+				<p class="shop_price">120 $</p>
+		<button type="button" class="shop_btn" id="btn" onclick="buy()">Заказать</button>
+					</div>
+				</div>
+		</div>	
+
+
+	</div>
+</section>
+
+<section class="maps">
+	<div class="container">
+		<h1 class="maps__title">Точка самовывоза</h1>
+		<div class="google"></div>
+		<h3 class="google__map">Google карта</h3>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.1277411289872!2d13.376809844752893!3d52.51627452322553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2z0JHRgNCw0L3QtNC10L3QsdGD0YDQs9GB0LrQuNC1INCy0L7RgNC-0YLQsA!5e1!3m2!1sru!2sru!4v1678532225746!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	<div class="yandex__map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ace6b03423975dbeaa528491e765fa89abd5a0b395b4e8d674bef57bb411ba899&amp;source=constructor" width="100%" height="418" frameborder="0"></iframe>
+	</div>
+
+</section >
+<section class="timer">
+	<div class="container">
+		<div id="time">боба</div>
+	</div>
+	
+</section>
+<section>
+	<div class="container">
+		
+	</div>
+</section>
+	<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</main>
+<footer class="footer">
+	<div class="container container_footer">
+		<p class="footer__text">&copy; Сады Придонья 2023</p>
+	</div>
+</footer>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/itc-slider.js"></script>
+	<script src="scripts/menu.js"></script>
+	<script src="scripts/theme.js"></script>
+	<script src="scripts/burger.js"></script>
+	<script src="scripts/timer.js"></script>
+	<script src="scripts/bootstrap.js"></script>
+</body>
+</html>
